@@ -74,16 +74,3 @@ install_script = install.sh
 managed_services = 
 	octoeverywhere
 
-[update_manager fluidd-config]
-type = git_repo
-primary_branch = master
-path = ~/fluidd-config
-origin = https://github.com/fluidd-core/fluidd-config.git
-managed_services = klipper
-
-[update_manager fluidd]
-type = web
-channel = stable
-repo = fluidd-core/fluidd
-path = ~/fluidd
-
